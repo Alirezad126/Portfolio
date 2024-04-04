@@ -1,6 +1,10 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
+import { AiFillLinkedin } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
+
 
 const Navbar = () => {
   return (
@@ -16,18 +20,15 @@ const Navbar = () => {
           LAMA DEV{" "}
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
-          </a>
+          <motion.a href="#" whileHover={{scale:1.7}}>
+            <AiFillLinkedin className="icons Linkedin" fill="#0075B5"/>
+          </motion.a>
+          <motion.a href="#" whileHover={{scale:1.7}}>
+            <AiOutlineInstagram className="icons Instagram" fill="#d62976"/>
+          </motion.a>
+          <motion.a href="#" whileHover={{scale:1.7}}>
+            <AiOutlineGithub className="icons Github" />
+          </motion.a>
         </div>
       </div>
     </div>
