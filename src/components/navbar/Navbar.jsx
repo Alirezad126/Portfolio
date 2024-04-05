@@ -16,7 +16,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5}}
         >
-        
+        HypeR-Dev
         </motion.span>
         <div className="social">
           <motion.a href="https://www.linkedin.com/in/alireza-daneshvar-910ba4194/" whileHover={{scale:1.7}}>

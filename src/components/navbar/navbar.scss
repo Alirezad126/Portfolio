@@ -8,9 +8,12 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    
+
     span {
-      font-weight: bold;
+      font-family: "Licorice", cursive;
+      font-size: 50px;
+      font-weight: 400;
+      font-style: normal;
     }
 
     .social {
@@ -21,8 +24,8 @@
         width: 40px;
         height: 40px;
 
-        .Instagram{
-          fill: #138ee7
+        .Instagram {
+          fill: #138ee7;
         }
       }
     }
