@@ -10,8 +10,9 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 400px;
+    width: 300px;
     background: white;
+    z-index: 1;
 
     .links {
       position: absolute;
@@ -41,5 +42,6 @@
     justify-content: center;
     background-color: transparent;
     border: none;
+    z-index: 2;
   }
 }
