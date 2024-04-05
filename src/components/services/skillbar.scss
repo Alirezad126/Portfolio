@@ -1,0 +1,12 @@
+.skills{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    flex-direction: column;
+
+    svg{
+        width: 60px;
+        height: 60px;
+    }
+    
+}
