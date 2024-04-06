@@ -1,4 +1,4 @@
-import "./services.scss";
+import "./about.scss";
 import { motion } from "framer-motion";
 import { FaUserGraduate } from "react-icons/fa6";
 import { MdOutlineWork } from "react-icons/md";
@@ -20,6 +20,7 @@ import { FaSass } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
 
 import SkillBar from "./SkillBar";
 
@@ -37,12 +38,22 @@ const variants = {
 
     transition: {
       duration: 1,
-      staggerChildren: 0.1,
+      staggerChildren: 0.4,
+    },
+  },
+
+  buttonInView: {
+    y: [0, 5, -5, 0],
+    transition: {
+      duration: 6,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "loop",
     },
   },
 };
 
-const Services = () => {
+const About = () => {
   return (
     <motion.div className="about">
       <motion.div
@@ -136,9 +147,23 @@ const Services = () => {
         variants={variants}
         initial="initial"
         whileInView="animate"
+        className="CVButton"
+      >
+        <motion.a href="https://drive.google.com/file/d/1Cl0-hcOaX8NxvMPlHXzCNyVqZKiipbUI/view?usp=sharing">
+          <motion.button variants={variants} whileInView="buttonInView">
+            Download My CV
+          </motion.button>
+        </motion.a>
+      </motion.div>
+      <motion.div
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
         className="listContainer"
       >
         <motion.div
+          initial="initial"
+          whileInView="animate"
           whileHover={{ background: "lightgray", color: "black" }}
           className="box"
         >
@@ -170,6 +195,8 @@ const Services = () => {
 
         {/*MLFlow, Docker FastAPI, Flask AWS, Azure*/}
         <motion.div
+          initial="initial"
+          whileInView="animate"
           whileHover={{ background: "lightgray", color: "black" }}
           className="box"
         >
@@ -186,6 +213,8 @@ const Services = () => {
         </motion.div>
 
         <motion.div
+          initial="initial"
+          whileInView="animate"
           whileHover={{ background: "lightgray", color: "black" }}
           className="box"
         >
@@ -203,11 +232,13 @@ const Services = () => {
         </motion.div>
 
         <motion.div
+          initial="initial"
+          whileInView="animate"
           whileHover={{ background: "lightgray", color: "black" }}
           className="box"
         >
           <div className="skillTitle">
-            <h2>Front & Back</h2>
+            <h2>Web Development</h2>
           </div>
           {/* ReactJS, JavaScript, HTML/CSS/Bootstrap */}
           <div className="skillItems">
@@ -216,7 +247,7 @@ const Services = () => {
             <SkillBar image={<FaHtml5 />} name={"HTML"} />
             <SkillBar image={<FaSass />} name={"Sass"} />
             <SkillBar image={<FaBootstrap />} name={"Bootstrap"} />
-            
+            <SkillBar image={<SiPostgresql />} name={"PostgreSQL"} />
           </div>
         </motion.div>
       </motion.div>
@@ -224,4 +255,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default About;
