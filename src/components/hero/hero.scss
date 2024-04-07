@@ -10,7 +10,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
 
     @include mobile {
       height: 40%;
@@ -55,13 +55,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
       gap: 40px;
 
       @include mobile {
         height: 60%;
         width: 100%;
+        align-items: center;
+        text-align: center;
       }
 
       h2 {
@@ -123,6 +123,9 @@
 
       img {
         width: 50px;
+        @include mobile{
+          width: 30px;
+        }
       }
     }
   }
