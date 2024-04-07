@@ -51,18 +51,18 @@ const About = () => {
 
       <div className="wrapper">
       <motion.div
-        variants={variants}
-        initial="initial"
-        whileInView="animate"
+        // variants={variants}
+        // initial="initial"
+        // whileInView="animate"
         className="textContainer"
       >
         <h1>About Me</h1>
       </motion.div>
 
       <motion.div
-        variants={variants}
-        initial="initial"
-        whileInView="animate"
+        // variants={variants}
+        // initial="initial"
+        // whileInView="animate"
         className="titleContainer"
       >
         <div className="title">
@@ -76,7 +76,7 @@ const About = () => {
               <h2>
                 <b>M.Sc.</b> Building Engineering
               </h2>
-              <p>Concordia University</p>
+              <h3>Concordia University</h3>
               <p>GPA 4.1/4.3</p>
             </div>
             <div className="date">(Jan 2021 - Apr 2023)</div>
@@ -84,15 +84,15 @@ const About = () => {
 
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="titleItems"
-            style={{ marginTop: "70px" }}
+            className="titleItems iustItem"
+            
           >
             <img id="IUST" src="./IUST.png" alt="IUST Icon" />
             <div className="educationItem">
               <h2>
                 <b>B.Sc.</b> Mechanical Engineering
               </h2>
-              <p>Iran University of Science and Technology</p>
+              <h3>Iran University of Science and Technology</h3>
               <p>GPA 17.5/20</p>
             </div>
             <div className="date">(Sep 2016 - Aug 2020)</div>
@@ -137,7 +137,7 @@ const About = () => {
         </div>
       </motion.div>
     
-      <motion.div
+      {/* <motion.div
         variants={variants}
         initial="initial"
         whileInView="animate"
@@ -221,7 +221,6 @@ const About = () => {
           <div className="skillTitle">
             <h2>Web Development</h2>
           </div>
-          {/* ReactJS, JavaScript, HTML/CSS/Bootstrap */}
           <div className="skillItems">
             <SkillBar image={<RiReactjsFill />} name={"React"} />
             <SkillBar image={<SiJavascript />} name={"JavaScript"} />
@@ -231,7 +230,7 @@ const About = () => {
             <SkillBar image={<SiPostgresql />} name={"PostgreSQL"} />
           </div>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
       </div>
     </motion.div>
   );
