@@ -4,160 +4,135 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 
-  .textContainer {
-    flex: 1;
-    align-self: flex-end;
+  .wrapper {
+    flex: 7;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    max-width: 1800px;
+    justify-content: center;
 
-    p {
-      font-weight: 400;
-      font-size: 25px;
-      font-family: "Satisfy", cursive;
-      font-style: normal;
-      color: gray;
-      text-align: right;
+    .textContainer {
+      flex: 1;
+      top: 0;
+      left: 0;
+      padding-top: 50px;
+      color: orange;
+      font-size: 48px;
+      text-align: center;
     }
-    hr {
-      width: 500px;
-      border: none;
-      border-top: 0.5px solid gray;
-    }
-  }
 
-  .titleContainer {
-    flex: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 50px;
-    margin: auto;
-    z-index: 2;
-    // 
-
-    .title {
+    .titleContainer {
+      flex: 4;
       display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: left;
-      padding: 30px;
-      border-radius: 50px;
-
-      .Icon {
-        width: 70px;
-        height: 70px;
-      }
-
-      h1 {
-        display: flex;
-        align-items: center;
-        font-size: 35px;
-        font-weight: 100;
-      }
-
-      .titleItems {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20px;
-
-        .educationItem {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .date {
-          margin-left: auto;
-        }
-
-        h2 {
-          font-size: 30px;
-          font-weight: 300;
-        }
-
-        p {
-          font-size: 20px;
-          max-width: 500px;
-          text-align: justify;
-        }
-
-        img {
-          width: 100px;
-          height: 100px;
-        }
-
-        #IUST {
-          background-color: white;
-          border-radius: 50px;
-        }
-      }
-    }
-  }
-
-  .listContainer {
-    flex: 2;
-    display: flex;
-    max-width: 1600px;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    gap: 30px;
-    align-items: flex-start;
-    
-    h2 {
-      margin-bottom: 10px;
-    }
-
-    .box {
-      width: 400px;
-      padding: 20px;
-      margin-bottom: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 50px;
+      margin: 0;
+      z-index: 2;
       border-radius: 30px;
       border: 0.5px solid gray;
+      //
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: left;
+        padding: 30px;
+        border-radius: 50px;
+
+        .Icon {
+          width: 70px;
+          height: 70px;
+        }
+
+        h1 {
+          display: flex;
+          align-items: center;
+          font-size: 35px;
+          font-weight: 100;
+        }
+
+        .titleItems {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 20px;
+
+          .educationItem {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .date {
+            margin-left: auto;
+          }
+
+          h2 {
+            font-size: 30px;
+            font-weight: 300;
+          }
+
+          p {
+            font-size: 20px;
+            max-width: 500px;
+            text-align: justify;
+            color: gray;
+          }
+
+          img {
+            width: 100px;
+            height: 100px;
+          }
+
+          #IUST {
+            background-color: white;
+            border-radius: 50px;
+          }
+        }
+      }
     }
 
-    .skillItems{
+    .listContainer {
+      flex: 3;
+      display: flex;
+      margin: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      .box {
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 30px;
+        border: 0.5px solid gray;
+      }
+
+      .skillItems {
         display: flex;
         gap: 40px;
         flex-wrap: wrap;
         justify-content: center;
 
-        img{
-            width: 70px;
-            height: 70px;
-            fill: red;
+        img {
+          width: 70px;
+          height: 70px;
+          fill: red;
         }
-        
-    }
-
-  }
-
-  .CVButton{
-    padding: 60px;
-    button{
-      padding: 30px;
-      background-color: transparent;
-      font-size: 20px;
-      color: white;
-      font-weight: bold;
-      border-radius: 30px;
-      border: 2px solid gray;
-      box-shadow: 0 0 10px white;
-      cursor: pointer;
-
-      &:hover{
-        box-shadow: 0 0 30px lightgray;
-        background-color: lightgray;
-        color: black;
-        border: 2px solid black;
       }
     }
   }

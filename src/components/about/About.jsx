@@ -42,28 +42,21 @@ const variants = {
     },
   },
 
-  buttonInView: {
-    y: [0, 5, -5, 0],
-    transition: {
-      duration: 6,
-      ease: "easeInOut",
-      repeat: Infinity,
-      repeatType: "loop",
-    },
-  },
+  
 };
 
 const About = () => {
   return (
     <motion.div className="about">
+
+      <div className="wrapper">
       <motion.div
         variants={variants}
         initial="initial"
         whileInView="animate"
         className="textContainer"
       >
-        <p>Be the change you wish to see in the world.</p>
-        <hr />
+        <h1>About Me</h1>
       </motion.div>
 
       <motion.div
@@ -143,18 +136,7 @@ const About = () => {
           </motion.div>
         </div>
       </motion.div>
-      <motion.div
-        variants={variants}
-        initial="initial"
-        whileInView="animate"
-        className="CVButton"
-      >
-        <motion.a href="https://drive.google.com/file/d/1Cl0-hcOaX8NxvMPlHXzCNyVqZKiipbUI/view?usp=sharing">
-          <motion.button variants={variants} whileInView="buttonInView">
-            Download My CV
-          </motion.button>
-        </motion.a>
-      </motion.div>
+    
       <motion.div
         variants={variants}
         initial="initial"
@@ -193,7 +175,6 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/*MLFlow, Docker FastAPI, Flask AWS, Azure*/}
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -201,7 +182,7 @@ const About = () => {
           className="box"
         >
           <div className="skillTitle">
-            <h2>AI & ML</h2>
+            <h2>Machine Learning</h2>
           </div>
           <div className="skillItems">
             <SkillBar image={<SiPytorch />} name={"PyTorch"} />
@@ -251,6 +232,7 @@ const About = () => {
           </div>
         </motion.div>
       </motion.div>
+      </div>
     </motion.div>
   );
 };
