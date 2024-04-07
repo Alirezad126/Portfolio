@@ -10,18 +10,18 @@ import Test from "./Test";
 const App = () => {
   return (
     <div>
-      <Cursor/>
+      {/* <Cursor/> */}
       <section id="Homepage">
         <Navbar />
         <Hero/>
       </section>
       <section > <Parallax/> </section>
       <section id="About"> <About/> </section>
-      <Portfolio/>
+      {/* <Portfolio/>
       <section id="Contact"> 
       <Contact/>
       </section>
-      
+       */}
     </div>
   );
 };

@@ -40,7 +40,7 @@ const Parallax = ({ type }) => {
     >
       <motion.h1 style={{y: yText}}>
         
-        Who Am I?!
+        Who Am I ?!
         <br />
         <motion.div animate={scrollButtonEffect}>
           <LuArrowDownToLine style={{ marginTop: "5%" }} />

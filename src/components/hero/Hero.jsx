@@ -97,7 +97,6 @@ const Hero = () => {
                 ]}
                 typeSpeed={60}
                 backSpeed={20}
-                
                 loop
               />
             </div>
@@ -108,13 +107,17 @@ const Hero = () => {
                 Try My Projects LIVE!
               </motion.button>
             </a>
-            <a href="#Contact">
-              <motion.button variants={textVariants}>Contact Me</motion.button>
-            </a>
-            <a className="CVButton" href="https://drive.google.com/file/d/1Cl0-hcOaX8NxvMPlHXzCNyVqZKiipbUI/view?usp=sharing">
-            <motion.button variants={textVariants}>
+
+            <a
+              className="CVButton"
+              href="https://drive.google.com/file/d/1Cl0-hcOaX8NxvMPlHXzCNyVqZKiipbUI/view?usp=sharing"
+            >
+              <motion.button variants={textVariants}>
                 Download My CV
               </motion.button>
+            </a>
+            <a href="#Contact">
+              <motion.button variants={textVariants}>Contact Me</motion.button>
             </a>
           </motion.div>
           <motion.img
