@@ -119,7 +119,7 @@ const About = () => {
           </div>
         </motion.div>
 
-        {width>1366 && <Skills variants={variants} width={width}/>}
+        {width>1300 && <Skills variants={variants} width={width}/>}
       </div>
     </motion.div>
   );

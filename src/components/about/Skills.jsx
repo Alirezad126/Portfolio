@@ -23,7 +23,7 @@ import SkillBar from "./SkillBar";
 
 
 const Skills = ({variants , width}) => {
-  if (width > 768){
+  if (width > 738){
     return (
     
         <motion.div
