@@ -20,7 +20,7 @@ const App = () => {
       </section>
       <section > <Parallax/> </section>
       <section id="About"> <About/> </section>
-      {width<768 && <section><Skills width={width}/></section> }
+      {width<768 && <section><Skills width={width}/></section>}
       {/* <Portfolio/>
       <section id="Contact"> 
       <Contact/>

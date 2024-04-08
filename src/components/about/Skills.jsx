@@ -123,7 +123,11 @@ const Skills = ({variants , width}) => {
       )
   }
   else{
-    return("Under Construction") ;
+    return (
+        <div>
+            under construction
+        </div>
+    );
   }
     
 }
