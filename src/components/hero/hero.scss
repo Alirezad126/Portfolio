@@ -15,7 +15,8 @@
     @include mobile {
       height: 40%;
       top: unset;
-      bottom: 0;
+      bottom: 30px;
+      right: 10px;
     }
 
     img {

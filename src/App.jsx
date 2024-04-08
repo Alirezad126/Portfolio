@@ -6,7 +6,6 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import About from "./components/about/About";
-import Test from "./Test";
 import Skills from "./components/about/Skills";
 const App = () => {
   const width = window.innerWidth;

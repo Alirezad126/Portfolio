@@ -37,10 +37,10 @@ const textVariants = {
   },
 
   heroImageInview: {
-    y: [0, 80, -80, 0],
-    rotate: [0, 8, -8, 0],
+    y: [0, 50, -50, 0],
+    rotate: [0, 5, -5, 0],
     transition: {
-      duration: 20,
+      duration: 30,
       ease: "easeInOut",
       repeat: Infinity,
       repeatType: "loop",
