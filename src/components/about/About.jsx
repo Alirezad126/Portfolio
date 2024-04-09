@@ -1,5 +1,5 @@
 import "./about.scss";
-import Skills from "./Skills"
+import SkillsDesktop from "./SkillsDesktop"
 import className from "classnames";
 import { motion } from "framer-motion";
 
@@ -119,7 +119,7 @@ const About = () => {
           </div>
         </motion.div>
 
-        {width>1300 && <Skills variants={variants} width={width}/>}
+        {width>1300 && <SkillsDesktop variants={variants} width={width}/>}
       </div>
     </motion.div>
   );

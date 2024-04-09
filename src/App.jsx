@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import About from "./components/about/About";
-import Skills from "./components/about/Skills";
+import SkillsMobile from "./components/about/SkillsMobile";
 const App = () => {
   const width = window.innerWidth;
 
@@ -19,7 +19,7 @@ const App = () => {
       </section>
       <section > <Parallax/> </section>
       <section id="About"> <About/> </section>
-      {width<768 && <section><Skills width={width}/></section>}
+      {width<768 && <section style={{ background: 'linear-gradient(180deg, #000000, #17172e)' }}><SkillsMobile width={width}/></section>}
       {/* <Portfolio/>
       <section id="Contact"> 
       <Contact/>

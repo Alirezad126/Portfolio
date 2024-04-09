@@ -19,7 +19,6 @@ import { SiJavascript } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 import SkillBar from "./SkillBar";
-import "./skills.scss";
 
 
 

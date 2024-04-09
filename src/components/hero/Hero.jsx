@@ -38,7 +38,7 @@ const textVariants = {
 
   heroImageInview: {
     y: [0, 50, -50, 0],
-    rotate: [0, 5, -5, 0],
+    
     transition: {
       duration: 30,
       ease: "easeInOut",
