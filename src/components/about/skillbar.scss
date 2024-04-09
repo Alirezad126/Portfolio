@@ -1,27 +1,28 @@
 @import "../../app.scss";
 
-.skills{
-    display: flex;
-    gap:5px;
-    align-items: center;
-    flex-direction: column;
-    
+.skills {
+    width: 25%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-direction: column;
+  @include mobile{
+    width: unset;
+  }
 
-    
-    p{
-        @include mobile{
-            font-size: 12px;
-        }
+  p {
+    font-size: 15px;
+    @include mobile {
+      font-size: 12px;
     }
-    svg{
-        width: 60px;
-        height: 60px;
+  }
+  svg {
+    width: 45px;
+    height: 45px;
 
-        @include mobile{
-            width: 10vw;
-            height:9vw;
-            
-        }
+    @include mobile {
+      width: 10vw;
+      height: 9vw;
     }
-    
+  }
 }

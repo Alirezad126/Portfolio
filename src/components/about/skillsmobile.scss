@@ -1,44 +1,44 @@
 @import "../../app.scss";
 
 .listContainer {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 23%;
+  padding-bottom: 30px;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 2.5vh;
+    margin-bottom: 1px;
+  }
+
+  .box {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    padding-top: 23%;
-    padding-bottom: 30px;
+    align-items: center;
     gap: 10px;
-    align-items: flex-start;
-    justify-content: space-between;
+    border-radius: 30px;
+    border: 0.5px solid gray;
+  }
 
-    h2 {
-        font-size: 2.5vh;
-      margin-bottom: 1px;
-    }
+  .skillItems {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .box {
-      width: 90%;
-      padding: 10px;
-      margin:auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      border-radius: 30px;
-      border: 0.5px solid gray;
-    }
-
-    .skillItems {
-      display: flex;
-      flex-direction: row;
-      gap: 5vw;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      img {
-        width: 50px;
-        height: 50px;
-      }
+    img {
+      width: 50px;
+      height: 50px;
     }
   }
+}
